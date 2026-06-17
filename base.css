@@ -1,0 +1,28 @@
+:root {
+  --bg:           #FFF9F5;
+  --bg-card:      #FFFFFF;
+  --bg-hover:     #FFEBE7;
+  --text:         #4A4E69;
+  --text-muted:   #9A8C98;
+  --accent:       #FFB7B2;
+  --accent-2:     #BFFCC6;
+  --border:       rgba(255, 183, 178, 0.3);
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+}
+
+/* ── Reset & Base ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--text); }
+::selection { background: rgba(255, 183, 178, 0.4); }
